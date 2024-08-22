@@ -12,10 +12,11 @@ In this segment, it will show how to capture on a port. By using the **Public Ra
 
 <br>
 This is how we can analyze the authentication packets and also check the username and password if the protocol and security are very weak. 
-<br>
+
 # HTTP Form-Based Authentication and DNS
 In this segment, we will check if the form-based authentication is safe or not. Also, the DNS protocol gives the encrypted data or decrypted data. 
-To check this first go to this website http://testing-ground.webscraping.pro/login?mode=login and open the wireshark. As HTTP use port 80, set the capture port 80 in Wireshark and start the capture. Go to the website and log in with credentials. Back to the Wireshark and stop capturing packets. After that select the login packet and there we can see the available credentials and those that are not in hashing format. ![] It's available there in simple text format. That is why HTTP Form-Based authentication is the weakest authentication system.
+To check this first go to this website http://testing-ground.webscraping.pro/login?mode=login and open the wireshark. As HTTP use port 80, set the capture port 80 in Wireshark and start the capture. Go to the website and log in with credentials. Back to the Wireshark and stop capturing packets. After that select the login packet and there we can see the available credentials and those that are not in hashing format. <br><br>![Decrypt Packet](https://github.com/AbuHanifSiam/Wireshark-for-Basic-Network-Security-Analysis/blob/909c172423884446ee0a1ff54d33ee73766e9c54/wireshark_pictures/decrypt%20packet_4.png) 
+It's available there in simple text format. That is why HTTP Form-Based authentication is the weakest authentication system.
 
 Again if we capture the DNS packet, we can see all the details given in the packet. So it's also not safe to use. 
 
